@@ -1,20 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+/**
+ * main - Prints the alphabet without q and e.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
-{   
-char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-/*print lowercase alphabet, excluding q and e */
-    for (int i = 0; i < 26; i++)
 {
-if (alphabet[i] != q && alphabet[i] != e)
-{
-putchar(alphabet[i]);
-}
-}
+	int i;
 
-/* print newline character */
-putchar('\n');
-
-return (0);
+	for (i = 97; i < 123; i++)
+	{
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
+	}
+	putchar('\n');
+	return (0);
 }
 
