@@ -2,18 +2,20 @@
 
 int main(void)
 {
-/*  print lowercase alphabe */
-for (char c = a; c <= z; c++)
+char lowercase[] = "abcdefghijklmnopqrstuvwxyz";
+char uppercase[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+/* print lowercase alphabet*/
+for (int i = 0; i < 26; i++)
 {
-putchar(c);
+putchar(lowercase[i]);
 }
-
 /* print uppercase alphabet */
-for (char c = A ; c <= Z ; c++)
-putchar(c);
+for (int i = 0; i < 26; i++)
+{
+putchar(uppercase[i]);
+}
 /* print newline character */
 putchar('\n');
 return (0);
-
 }
 
