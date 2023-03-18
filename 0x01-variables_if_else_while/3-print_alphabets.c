@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) 
+int main(void)
 {
 /*  print lowercase alphabe */
 for (char c = 'a'; c <= 'z'; c++)
