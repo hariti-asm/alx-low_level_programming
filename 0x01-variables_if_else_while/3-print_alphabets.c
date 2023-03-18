@@ -14,6 +14,6 @@ putchar(uppercase[i]);
 }
 /* print newline character */
 putchar('\n');
-return (0);
+return (1);
 }
 
