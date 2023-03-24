@@ -1,29 +1,25 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_number - prints an integer
- * @n: integer to be printed
+ * main - print largest prime factor of 612852475143
+ * Return: 0 on success
  */
-void print_number(int n)
+
+int main(void)
 {
-	unsigned int n1;
+	unsigned long num = 612852475143;
+	unsigned long divisor = 2;
 
-	if (n < 0)
+	while (divisor < num)
 	{
-		n1 = -n;
-		_putchar('-');
-	} else
-	{
-		n1 = n;
+		if (num % divisor == 0)
+		{
+			num /= divisor;
+			divisor = 2;
+		}
+		else
+			divisor++;
 	}
-
-	if (n1 / 10)
-	{
-		print_number(n1 / 10);
-	}
-
-	_putchar((n1 % 10) + '0');
+	printf("%lu\n", num);
+	return (0);
 }
-
-
-
