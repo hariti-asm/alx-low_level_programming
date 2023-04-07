@@ -20,7 +20,7 @@ int main(int argc __attribute__((unused)), char *argv[])
 
 {
 
-	printf("%s\n", *argv);
+	printf("%s\n",argv[1]);
 
 
 
