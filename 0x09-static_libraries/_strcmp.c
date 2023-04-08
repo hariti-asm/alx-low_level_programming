@@ -1,5 +1,5 @@
 #include "main.h"
-int _atoi(char *s)
+int _strcmp(char *s1, char *s2)
 {
 	return (0);
 }
