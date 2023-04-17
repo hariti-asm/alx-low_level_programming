@@ -11,7 +11,7 @@
 	 *
 	 * Description: Longer description
 	 */
-	struct dog_t
+	struct dog
  	{
 		char *name;
 		float age;
