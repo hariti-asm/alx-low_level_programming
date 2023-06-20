@@ -1,1 +1,1 @@
-dynamic lib
+readme
